@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation with Submenu</title>
+  <style>
+    /* Basic navigation styling */
+    nav {
+      background: #2e7d32;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    nav ul li:hover {
+      background: #388e3c;
+    }
+
+    /* Submenu hidden by default */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #4caf50;
+      min-width: 150px;
+      z-index: 999;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Projects ▾</a>
+        <ul>
+          <li><a href="index_velhe.html" class="underline">Nestland Kodawadi-Velhe</a></li>
+          <li><a href="index_bhor.html" class="underline">Nestland Bhor</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="underline">Contact</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

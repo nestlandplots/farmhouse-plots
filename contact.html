@@ -5,23 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us – Nestland Bhor</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Basic navigation styling */
+    nav {
+      background: #2e7d32;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    nav ul li:hover {
+      background: #388e3c;
+    }
+
+    /* Submenu hidden by default */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #4caf50;
+      min-width: 150px;
+      z-index: 999;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li {
+      display: block;
+    }
+  </style>
+  
 </head>
 <body class="bg-green-50 text-gray-800">
   <header class="bg-green-700 text-white p-6 text-center">
     <h1 class="text-2xl font-bold">Contact Us</h1>
-    <nav class="mt-2 space-x-4">
-      <a href="index.html" class="underline">Home</a>
-      <a href="about.html" class="underline">About</a>
-      <a href="gallery.html" class="underline">Gallery</a>
-      <a href="contact.html" class="underline">Contact</a>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="underline">Home</a></li>
+      <li>
+        <a href="#">Projects ▾</a>
+        <ul>
+          <li><a href="index_velhe.html" class="underline">Nestland Kodawadi-Velhe</a></li>
+          <li><a href="index_bhor.html" class="underline">Nestland Bhor</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="underline">Contact</a></li>
+    </ul>
+  </nav>
   </header>
 
   <main class="max-w-xl mx-auto p-6 space-y-4">
     <p>We'd love to help you learn more about Nestland Bhor Farmhouse Plots. Reach out to us:</p>
 
     <div class="bg-white p-4 rounded shadow">
-      <p><strong>📍 Location:</strong> Village Dhere, Bhor, Pune</p>
       <p><strong>📞 Phone:</strong> <a href="tel:9890098900" class="text-green-700 underline">98900 98900</a></p>
       <p><strong>📧 Email:</strong> <a href="mailto:info@nestlandbhor.com" class="text-green-700 underline">info@nestlandbhor.com</a></p>
     </div>
@@ -47,7 +102,7 @@
   </main>
 
   <footer class="bg-green-700 text-white text-center p-4 mt-10">
-    &copy; 2025 Nestland Bhor. All rights reserved.
+    &copy; 2025 Nestland Plots. All rights reserved.
   </footer>
 </body>
 </html>

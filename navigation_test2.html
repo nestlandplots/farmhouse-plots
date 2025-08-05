@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>In-Page Navigation</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      scroll-behavior: smooth; /* smooth scroll effect */
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #2e7d32;
+      padding: 10px;
+      z-index: 999;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 100px 20px;
+      margin-top: 50px;
+      height: 100vh;
+    }
+
+    #features { background: #f1f8e9; }
+    #plots { background: #e8f5e9; }
+    #amenities { background: #c8e6c9; }
+    #contact { background: #a5d6a7; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#plots">Plots</a>
+    <a href="#amenities">Amenities</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="features">
+    <h2>Features</h2>
+    <p>Details about scenic beauty, accessibility, etc.</p>
+  </section>
+
+  <section id="plots">
+    <h2>Plot Details</h2>
+    <p>Sizes, location, surroundings...</p>
+  </section>
+
+  <section id="amenities">
+    <h2>Amenities</h2>
+    <p>Kids play area, waterfall access, etc.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Call: 98900 98900</p>
+  </section>
+
+</body>
+</html>
