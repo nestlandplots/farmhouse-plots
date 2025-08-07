@@ -26,7 +26,11 @@ nav a {
   margin: 0 15px;
   font-weight:600;
 }
-nav a:hover { color: var(--gold); }
+nav a:hover { 
+  color: var(--gold); 
+  transform: scale(1.15);
+}
+
 header {
   height: 100vh;
   /*background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400') center/cover no-repeat;*/
@@ -59,6 +63,10 @@ h2 {
   margin-bottom:20px;
   text-align:center;
 }
+h2:hover {
+ transform: scale(1.15);
+ transition: transform 0.3s ease, font-size 0.3s ease;
+}
 .amenities ul {
   list-style:none;
   display:grid;
@@ -76,6 +84,13 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
   gap:20px;
 }
+
+.gallery img:hover {
+ transform: scale(2);
+ transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+
 .gallery img {
   width:100%;
   border-radius:8px;
