@@ -95,6 +95,17 @@ h2:hover {
   width:100%;
   border-radius:8px;
 }
+.layout {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap:20px;
+}
+
+.layout img {
+  width:100%;
+  border-radius:8px;
+}
+
 video {
   width:100%;
   border-radius:8px;
